@@ -1,0 +1,25 @@
+{
+  "name": "qa-playwright-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EderCB/qa-playwright-cucumber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EderCB/qa-playwright-cucumber/issues"
+  },
+  "homepage": "https://github.com/EderCB/qa-playwright-cucumber#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.1",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "ts-node": "^10.9.2"
+  }
+}
