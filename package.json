@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
-    "report": "ts-node utils/report.ts"
+    "report": "ts-node src/test/utils/report.ts"
   },
   "repository": {
     "type": "git",

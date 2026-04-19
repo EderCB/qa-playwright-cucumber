@@ -5,16 +5,17 @@ import fs from 'fs';
 let browser: Browser;
 
 BeforeAll(async () => {
+    
+    if (fs.existsSync('reports/screenshots')) {
+        fs.rmSync('reports/screenshots', { recursive: true, force: true });
+    }
+
+    fs.mkdirSync('reports/screenshots', { recursive: true });
+
     browser = await chromium.launch({
         //headless: false,
         //slowMo: 800
     });
-
-     if (fs.existsSync('reports')) {
-        fs.rmSync('reports', { recursive: true, force: true });
-    }
-
-    fs.mkdirSync('reports/screenshots', { recursive: true });
 });
 
 Before(async function () {

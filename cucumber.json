@@ -14,7 +14,6 @@
         "dryRun": false,
         "require": [
             "src/test/steps/*.ts",
-            "src/test/utils/*.ts",
             "src/test/hooks/*.ts"
         ],
         "requireModule": [
