@@ -1,7 +1,7 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { LoginPage } from '../pages/LoginPage';
 import { users } from '../utils/testData';
-import {expect} from '@playwright/test';
+import { expect } from '@playwright/test';
 
 let loginPage: LoginPage;
 
@@ -23,5 +23,5 @@ Then('the user should be redirected to the products page', async function () {
 });
 
 Then('an error message should be displayed', async function () {
-    await expect(await loginPage.getErrorMessageLogin()).toBe('Epic sadface: Sorry, this user has been locked out.');
+    expect(await loginPage.getErrorMessageLogin()).toBe('Epic sadface: Sorry, this user has been locked out.');
 });
