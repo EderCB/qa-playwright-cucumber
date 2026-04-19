@@ -1,5 +1,9 @@
 {
     "default": {
+        "format": [
+            "progress",
+            "json:reports/cucumber-report.json"
+        ],
         "formatOptions": {
             "snippetInterface": "async-await"
         },
@@ -10,7 +14,8 @@
         "dryRun": false,
         "require": [
             "src/test/steps/*.ts",
-            "src/test/utils/*.ts"
+            "src/test/utils/*.ts",
+            "src/test/hooks/*.ts"
         ],
         "requireModule": [
             "ts-node/register"
