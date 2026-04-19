@@ -10,8 +10,8 @@ BeforeAll(async () => {
         //slowMo: 800
     });
 
-    if (fs.existsSync('reports/screenshots')) {
-        fs.rmSync('reports/screenshots', { recursive: true, force: true });
+     if (fs.existsSync('reports')) {
+        fs.rmSync('reports', { recursive: true, force: true });
     }
 
     fs.mkdirSync('reports/screenshots', { recursive: true });
