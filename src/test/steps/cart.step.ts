@@ -22,8 +22,8 @@ Given('the user is logged in', async function () {
 
 When('the user adds a product to the cart', async function () {
     productsPage = new ProductsPage(this.page);
-
-    await productsPage.addProductByName(products.jacket.name);
+    this.selectedProduct = products.jacket;
+    await productsPage.addProductByName(this.selectedProduct.name);
 });
 
 When('the user navigates to the shopping cart', async function () {

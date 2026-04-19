@@ -3,6 +3,7 @@ Feature: Checkout Process
   Background:
     Given the user is logged in
     And the user adds a product to the cart
+    And the user navigates to the shopping cart
 
   Scenario: Successfully complete a purchase
     When the user proceeds to checkout

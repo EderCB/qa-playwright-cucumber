@@ -35,3 +35,11 @@ export const products = {
     price: '$7.99'
   }
 };
+
+export const checkoutData = {
+  validUser: {
+    firstName: 'Eder',
+    lastName: 'Carrillo',
+    postalCode: '12345'
+  }
+};
